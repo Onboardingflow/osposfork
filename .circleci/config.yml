@@ -33,7 +33,7 @@ jobs:
       - php/install-packages
       - run:
           name: run tests
-          command: ./vendor/bin/phpunit
+          command: ./vendor/bin/phpunit --bootstrap system/Test/bootstrap.php
   deploy:
     # This is an example deploy job, not actually used by the workflow
     docker:
